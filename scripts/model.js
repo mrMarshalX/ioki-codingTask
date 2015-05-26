@@ -81,7 +81,7 @@ var model = model || (function () {
 		for (var i = 0; i < keys.length; i++) {
 			correctness[keys[i]] = exerciseAnswers[keys[i]] === correctAnswers[model][keys[i]];			
 		}
-		console.log(correctness);
+		
 		if (isCorrect) {
 			document.dispatchEvent(new CustomEvent('model:correct', {detail: correctness }));
 		} else {
