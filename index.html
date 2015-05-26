@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ioki - coding task</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/alertify.core.css">
+		<link rel="stylesheet" href="styles/alertify.default.css">
+		<link rel="stylesheet" href="styles/styles.css">		
+	</head>
+	<body>
+		<div id="container">
+			<div class="exercises">
+				<div id="exercise-one" class="visible">
+					<p class="exercise-title">Exercise 1 Vocabulary</p>
+					<p class="exercise-title-small">Label the weather symbols.</p>
+
+					<div id="exercise-one-bg"></div>
+					<input type="text" data-id="first">					
+					<input type="text" data-id="second">
+					<input type="text" data-id="third">
+					<input type="text" data-id="fourth">
+					<input type="text" data-id="fifth">
+					<input type="text" data-id="sixth">
+				</div>
+				<div id="exercise-two" class="invisible">
+					<p class="exercise-title">Exercise 2 Vocabulary</p>
+					<p class="exercise-title-small">What activities do you see on the picture?</p>
+
+					<div id="exercise-two-bg"></div>
+					<input type="text" data-id="first">
+					<input type="text" data-id="second">
+					<input type="text" data-id="third">
+					<input type="text" data-id="fourth">
+					<input type="text" data-id="fifth">
+					<input type="text" data-id="sixth">
+				</div>				
+			</div>
+			<button type="button" class="btn btn-success check-answer disabled">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			<div id="buttons">
+				<button type="button" class="btn btn-primary" data-id="#exercise-one" data-role="changeView">Exercise 1</button>
+				<button type="button" class="btn btn-primary" data-id="#exercise-two" data-role="changeView">Exercise 2</button>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="scripts/alertify.min.js"></script>
+		<script src="scripts/model.js"></script>
+		<script src="scripts/view.js"></script>
+		<script src="scripts/controller.js"></script>
+	</body>
+</html>

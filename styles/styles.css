@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	line-height:1;
+}
+
+.alertify-logs {
+	position: fixed;
+	z-index: 5000;
+	right: 10px;
+	top: 10px;
+	width: 300px;
+
+	font-size:1.26em;
+}
+
+#container {
+	position:relative;
+	width:974px;
+	height:540px;
+	margin:0 auto;
+	background:url('../pictures/background.png');	
+}
+
+#buttons {
+	position:absolute;
+	top:560px;
+	left:20px;
+}
+
+.invisible {
+	display:none;
+}
+
+.exercise-title {
+	z-index:500;
+	position:absolute;
+	left:25px;
+	top:5px;
+	font-size:25px;
+	font-weight:700;
+	display:inline-block;
+	color:blue;
+	font-family:Verdana;
+}
+
+.exercise-title-small {
+	z-index:500;
+	position:absolute;
+	left:25px;
+	top:40px;
+	font-size:20px;
+	font-weight:400;
+	display:inline-block;
+	color:black;
+	font-family:Verdana;
+}
+
+#exercise-one-bg {
+	position:absolute;
+	top:30px;
+	left:107px;
+	width:760px;
+	height:505px;
+	background:url('../pictures/exercise_1.png');
+}
+
+#exercise-two-bg {
+	position:absolute;
+	top:70px;
+	left:120px;
+	width:733px;
+	height:423px;
+	background:url('../pictures/exercise_2.png');	
+}
+
+.check-answer {
+	position:absolute;
+	top:465px;
+	left:860px;
+}
+
+.check-answer.disabled {
+	pointer-events: none;
+	cursor:not-allowed;	
+}
+
+.correct {
+	border:solid 2px #0f0;
+}
+
+.incorrect {
+	border:solid 2px #f00;
+}
+
+#exercise-one.visible input[type="text"] {
+	position:absolute;
+	height:25px;
+	font-size:1.5em;
+	padding-left:5px;
+}
+
+#exercise-one.visible input[data-id="second"], 
+#exercise-one.visible input[data-id="third"],
+#exercise-one.visible input[data-id="fourth"],
+#exercise-one.visible input[data-id="fifth"],
+#exercise-one.visible input[data-id="sixth"] {
+	width:79px;
+}
+
+#exercise-one.visible input[data-id="first"] {
+	left:155px;
+	top:196px;
+	width:44px;
+}
+
+#exercise-one.visible input[data-id="second"] {
+	left:434px;
+	top:191px;
+}
+
+#exercise-one.visible input[data-id="third"] {
+	left:713px;
+	top:191px;
+}
+
+#exercise-one.visible input[data-id="fourth"] {
+	left:155px;
+	top:404px;	
+}
+
+#exercise-one.visible input[data-id="fifth"] {
+	top:404px;
+	left:434px;	
+}
+
+#exercise-one.visible input[data-id="sixth"] {
+	top:404px;
+	left:713px;
+}
+
+#exercise-two.visible input[type="text"] {
+	position:absolute;
+	height:30px;
+	font-size:1.5em;
+	padding-left:5px;
+}
+
+#exercise-two.visible input[data-id="first"],
+#exercise-two.visible input[data-id="second"],
+#exercise-two.visible input[data-id="third"],
+#exercise-two.visible input[data-id="fourth"],
+#exercise-two.visible input[data-id="fifth"],
+#exercise-two.visible input[data-id="sixth"] {
+	width:42px;
+}
+
+#exercise-two.visible input[data-id="first"] {
+	left:153px;
+	top:400px;
+}
+
+#exercise-two.visible input[data-id="second"] {
+	left:383px;
+	top:400px;
+}
+
+#exercise-two.visible input[data-id="third"] {
+	left:650px;
+	top:400px;
+}
+
+#exercise-two.visible input[data-id="fourth"] {
+	left:153px;
+	top:444px;	
+}
+
+#exercise-two.visible input[data-id="fifth"] {
+	top:444px;
+	left:383px;	
+}
+
+#exercise-two.visible input[data-id="sixth"] {
+	top:444px;
+	left:650px;
+}
